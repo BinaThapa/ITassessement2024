@@ -1,0 +1,120 @@
+<html >
+  <head>
+    <title>Document</title>
+    <link rel="stylesheet" href="../css/style.css" />
+  </head>
+<body background=" rgba(233, 245, 233, 1);">
+    <section class="header">
+      <nav>
+        <a href="index.html"><img src="../images/logo.png.png" /></a>
+        <div class="nav-links">
+          <ul>
+            <li><a href="index.html"> Home </a></li>
+            <li><a href="product.html"> Products </a></li>
+            <li><a href="aboutus.html"> About </a></li>
+            <li><a href="researchpage.html"> Research</a></li>
+            <li><a href="contact.html"> Contact</a></li>
+            <li><a href="login.html"> Login</a></li>
+            <li>
+              <a href="cart.html"> <img src="../images/Shopping cart.png" /></a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+    </section>
+
+    <div>
+        <body>
+            <style>
+                .contact-form {
+                  text-align: center;
+                  margin-top: 50px; /* Adjust margin as needed */
+                }
+                .contact-form form {
+                  display: inline-block;
+                  text-align: left;
+                  padding: 20px;
+                  border: 2px solid #ccc;
+                  border-radius: 8px;
+                  background-color: #f9f9f9;
+                }
+                .contact-form h2 {
+                  margin-bottom: 20px;
+                }
+                .contact-form label {
+                  display: block;
+                  margin-bottom: 10px;
+                }
+                .contact-form input[type="text"],
+                .contact-form input[type="email"],
+                .contact-form textarea {
+                  width: 100%;
+                  padding: 10px;
+                  margin-bottom: 15px;
+                  border: 1px solid #ccc;
+                  border-radius: 5px;
+                  box-sizing: border-box;
+                }
+                .contact-form button {
+                  width: 100%;
+                  padding: 10px;
+                  background-color: #4CAF50;
+                  color: white;
+                  border: none;
+                  border-radius: 5px;
+                  cursor: pointer;
+                }
+                .contact-form button:hover {
+                  background-color: #45a049;
+                }
+              </style>
+            </head>
+            <body background="rgba(233, 245, 233, 1);">
+              <section class="contact-form">
+                <h2>Contact Us</h2>
+                <form id="contactForm">
+                  <div>
+                    <label for="name">Name:</label>
+                    <input type="text" id="name" name="name" required>
+                  </div>
+                  <div>
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" required>
+                  </div>
+                  <div>
+                    <label for="message">Message:</label>
+                    <textarea id="message" name="message" rows="4" required></textarea>
+                  </div>
+                  <button type="submit">Send Message</button>
+                </form>
+              </section>
+            
+              <script>
+                document.getElementById('contactForm').addEventListener('submit', function(event) {
+                  event.preventDefault(); // Prevent the form from submitting normally
+                  
+                  // Get the form data
+                  var formData = new FormData(this);
+                  
+                  // You can now send the formData using fetch or any other method
+                  // For demonstration, let's log the form data
+                  for (var pair of formData.entries()) {
+                    console.log(pair[0] + ': ' + pair[1]);
+                  }
+                  
+                  // You can also perform other actions like showing a success message or redirecting the user
+                });
+            </script>
+            <section>
+        
+            <footer>
+                <p>&copy; CopyRightBonsai </p>
+              </footer>
+              </section>
+          </body>
+        </html>
+    </div>
+    
+
+
+

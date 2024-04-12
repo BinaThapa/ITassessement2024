@@ -1,0 +1,186 @@
+
+<html >
+  <head>
+    <title>About us</title>
+    <link rel="stylesheet" href="../css/style.css" />
+
+    <style>
+      .slider {
+        width: 90%;
+        height: 236px;
+        margin: 20px auto;
+        box-sizing: border-box;
+        overflow: hidden;
+        box-shadow: 5px 5px 10px rgb(105, 92, 92);
+        border-radius: 21px;
+      }
+
+      img {
+        width: 100%;
+        height: 100%;
+      }
+    </style>
+  </head>
+  <body background=" rgba(233, 245, 233, 1);">
+    <section class="header">
+      <!--Nav bar html code  -->
+      <nav>
+        <a href="index.html"><img src="../images/logo.png.png" /></a>
+        <div class="nav-links">
+          <ul>
+            <li><a href="index.html"> Home </a></li>
+            <li><a href="product.html"> Products </a></li>
+            <li><a href="aboutus.html"> About </a></li>
+            <li><a href="researchpage.html"> Research</a></li>
+            <li><a href="contact.html"> Contact</a></li>
+            <li><a href="login.html"> Login</a></li>
+            <li>
+              <a href="cart.html"> <img src="../images/Shopping cart.png" /></a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+    </section>
+    <!-- nav bar section ends heren  -->
+
+    <!-- Image slider java script -->
+    <div class="slider">
+      <div id="img">
+        <img src="../images/one1.png" />
+      </div>
+    </div>
+    <script>
+      var images = [
+        " ../images/one1.png",
+        "../images/two2.png",
+        "../images/three3.png",
+        "../images/four4.png",
+        "../images/five5.png",
+      ];
+      var x = 0;
+      var imgs = document.getElementById("img");
+      setInterval(slider, 3000);
+      function slider() {
+        if (x < images.length) {
+          x = x + 1;
+        } else {
+          x = 1;
+        }
+        imgs.innerHTML = "<img src=" + images[x - 1] + ">";
+      }
+    </script>
+    <!-- java script for image slider ending  -->
+
+    <!-- first member  -->
+    <div>
+      <div class="team20">
+        <span class="ph">Meet Our Creative Team !!</span>
+      </div>
+      <div class="bina">
+        <img class="arcpic" src="../images/IMG_0012.JPG" />
+        <h3> Bina Thapa </h3>
+        <span class="abt">
+          Fareless <br/>
+          Motivator</span
+        >
+        <div class="media">
+          <a href=""><img src="../images/Facebook.png" alt="" /></a>
+        </div>
+        <div class="inst">
+          <a href=""><img src="../images/Instagram.png" alt="" /></a>
+        </div>
+        <div class="mail4">
+          <a href=""><img src="../images/Mail.png" alt="" /></a>
+        </div>
+        <div class="cvlink">
+          <a href="Bina.html">click here for more info </a>
+        </div>
+      </div>
+      <!-- part ending  -->
+
+      <!-- secod 'part  -->
+      <div class="adi">
+        <img class="aypic" src="../images/IMG_3835.PNG" />
+        <h3>Aaashruti Pokhrel</h3>
+        <span class="abt">Entrepreneur <br />Business Enthuesiastic</span>
+        <!-- facbook pic -->
+        <div class="media">
+          <a href=""><img src="../images/Facebook.png" alt="" /></a>
+        </div>
+        <!-- instapic -->
+        <div class="inst">
+          <a href=""><img src="../images/Instagram.png" alt="" /></a>
+        </div>
+        <!-- mail ../images -->
+        <div class="mail4">
+          <a href=""><img src="../images/Mail.png" alt="" /></a>
+        </div>
+        <div class="cvlink">
+          <a href="aashruti.html">click here for more info </a>
+        </div>
+      </div>
+      <!-- part ending  -->
+
+      <!-- lina part  -->
+      <div class="lina">
+        <img class="dxpic" src="../images/IMG_3834.JPG" />
+        <h3>Lina Thapa</h3>
+        <span class="abt">A UI/UX Designer. <br />Melophilic Illustrator</span>
+        <div class="media">
+          <a href=""><img src="../images/Facebook.png" alt="" /></a>
+        </div>
+        <div class="inst">
+          <a href=""><img src="../images/Instagram.png" alt="" /></a>
+        </div>
+        <div class="mail4">
+          <a href=""><img src="../images/Mail.png" alt="" /></a>
+        </div>
+        <div class="cvlink">
+          <a href="Lina.html">click here for more info </a>
+        </div>
+      </div>
+      <!--  overall ending  -->
+
+      <!-- Forth part  -->
+      <div class="sharad">
+        <img class="hempic" src="../images/IMG_3256.PNG" />
+        <h3>Sharad Kafle</h3>
+        <span class="abt"> Explorer.<br />Sports Person. </span>
+        <div class="media">
+          <a href=""><img src="../images/Facebook.png" alt="" /></a>
+        </div>
+        <div class="inst">
+          <a href=""><img src="../images/Instagram.png" alt="" /></a>
+        </div>
+        <div class="mail4">
+          <a href=""><img src="../images/Mail.png" alt="" /></a>
+        </div>
+        <div class="cvlink">
+          <a href="Sharad.html">click here for more info </a>
+        </div>
+      </div>
+      <!--  part ending  -->
+
+      <!-- start  -->
+      <div class="lawanga">
+        <img class="lypic" src="../images/lw.png" />
+        <h3>Lawang </h3>
+        <span class="abt">Fashion lover .<br />Creative Learner. </span>
+        <div class="media">
+          <a href=""><img src="../images/Facebook.png" alt="" /></a>
+        </div>
+        <div class="inst">
+          <a href=""><img src="../images/Instagram.png" alt="" /></a>
+        </div>
+        <div class="mail4">
+          <a href=""><img src="../images/Mail.png" alt="" /></a>
+        </div>
+        <div class="cvlink">
+          <a href="law.html">click here for more info </a>
+        </div>
+      </div>
+      <!--  stop  -->
+    </div>
+    
+  </body>
+</html>
